@@ -1,0 +1,50 @@
+{
+  "built_at_utc": "2026-11-23T19:59:20+00:00",
+  "seasons": {
+    "2025": {
+      "max_week": 18,
+      "plays": 34301,
+      "ftn": true,
+      "snaps": true,
+      "participation": true,
+      "files": [
+        "coverage_defense_2025.csv",
+        "coverage_receivers_2025.csv",
+        "player_usage_2025.csv",
+        "team_defense_2025.csv",
+        "team_offense_2025.csv"
+      ]
+    },
+    "2026": {
+      "max_week": 11,
+      "plays": 20815,
+      "ftn": true,
+      "snaps": true,
+      "participation": false,
+      "files": [
+        "player_usage_2026.csv",
+        "team_defense_2026.csv",
+        "team_offense_2026.csv"
+      ]
+    }
+  },
+  "definitions": {
+    "offensive play": "pass == 1 or rush == 1 (pass includes sacks and scrambles), excluding kneels, spikes and two-point tries; regular season only",
+    "neutral": "win probability between 0.20 and 0.80 and more than 120 seconds left in the half",
+    "pass_rate_neutral": "share of neutral offensive plays that are dropbacks",
+    "proe_neutral": "mean nflfastR pass_oe on neutral plays, in percentage points (actual pass rate minus expected)",
+    "pass_rate_lead8 / trail8": "dropback share when the offense leads / trails by 8+ points",
+    "early_down_pass_rate_neutral": "dropback share on neutral 1st and 2nd downs",
+    "sec_per_play_neutral": "median seconds between consecutive neutral snaps on the same drive",
+    "rz_pass_rate": "dropback share inside the opponent 20; inside10 the same inside the 10",
+    "go_rate_4th_short": "share of 4th-and-2-or-less (excluding the last 2 minutes of each half) where the offense ran a play rather than punt or kick",
+    "play_action / screen / rpo / motion": "FTN-charted rate; play action and screen per dropback, rpo and motion per offensive play",
+    "blitz_rate": "share of dropbacks with 1+ blitzer (FTN n_blitzers > 0)",
+    "man_rate": "share of charted dropbacks the defense was in man coverage (participation data; published after each season)",
+    "single_high / two_high": "single high = Cover 0/1/3; two high = Cover 2, 2-Man, 4, 6",
+    "target_share": "player targets / team pass attempts with a credited receiver",
+    "last4": "the team's four most recent games in the data",
+    "receiver coverage splits": "targets, target share, yards/target and EPA/target vs man and vs zone; small samples are flagged (fewer than 25 targets) and should be blended toward overall rates before use"
+  },
+  "attribution": "Data: nflverse. FTN charting and participation data by FTN Data via nflverse, CC-BY-SA 4.0."
+}

@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-11-26T19:55:33+00:00",
+  "built_at_utc": "2026-11-27T19:44:11+00:00",
   "seasons": {
     "2025": {
       "max_week": 18,
@@ -17,7 +17,7 @@
     },
     "2026": {
       "max_week": 12,
-      "plays": 21059,
+      "plays": 21460,
       "ftn": true,
       "snaps": true,
       "participation": false,
